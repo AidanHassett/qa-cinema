@@ -14,7 +14,7 @@ const customer = new Schema ({
     required: true,
     minlength: 1
   },
-  hashedSaltedPassword: {
+  password: {
     type: String,
     required: true,
     minlength: 256,

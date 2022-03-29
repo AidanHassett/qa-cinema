@@ -13,7 +13,12 @@ const comment = new Schema ({
     required: true,
     minlength: 1,
     maxlength: 256
-  }
+  },
+  timestamp: {
+    type: Date,
+    default: new Date()
+  },
+  replies: [comment]
 });
 
 const role = new Schema ({
@@ -40,7 +45,9 @@ const film = new Schema ({
     required: true,
     minlength: 1
   },
-  poster: String,
+  poster: { //path to image file
+    type: String
+  },
   director: {
     type: String,
     required: true,
@@ -56,6 +63,11 @@ const film = new Schema ({
     required: true,
     min: new Date("1888-01-01")
   },
+  duration: { //integer of minutes
+    type: Number,
+    required: true,
+    min: 0
+  }
   cast: [role],
   comments: [comment]
 });

@@ -36,7 +36,7 @@ const ticket = new Schema ({
       min: 1
     }
   }],
-  child: {
+  child: {  //true if this is a child ticket
     type: Boolean,
     required: true
   },
