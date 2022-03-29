@@ -39,12 +39,12 @@ const cinemaScreen = new Schema ({
   },
   seats: [{
     rows: {
-      type: int,
+      type: Number,
       required: true,
       min: 1
     },
     cols: {
-      type: int,
+      type: Number,
       required: true,
       min: 1
     }
@@ -53,13 +53,13 @@ const cinemaScreen = new Schema ({
 
 const timeOfDay = new Schema ({
   hour: {
-    type: int,
+    type: Number,
     required: true,
     min: 0,
     max: 23
   },
   minute: {
-    type: int,
+    type: Number,
     required: true,
     min: 0,
     max: 59
@@ -94,7 +94,7 @@ const cinema = new Schema ({
   },
   openTime: timeOfDay,
   closeTime: timeOfDay,
-  placesToGo: [placesToGo],
+  placesToGo: [placeToGo],
   screens: [cinemaScreen]
 });
 

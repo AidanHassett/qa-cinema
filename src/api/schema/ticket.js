@@ -9,7 +9,7 @@ const concessionOrder = new Schema ({
     ref: "Concession"
   },
   quantity: {
-    type: int,
+    type: Number,
     required: true,
     min: 1
   }
@@ -26,18 +26,18 @@ const ticket = new Schema ({
   },
   seat: [{
     row: {
-      type: int,
+      type: Number,
       required: true,
       min: 1
     },
     col: {
-      type: int,
+      type: Number,
       required: true,
       min: 1
     }
   }],
   child: {
-    type: boolean,
+    type: Boolean,
     required: true
   },
   concessions: [concessionOrder]

@@ -10,7 +10,7 @@ const concession = new Schema ({
     minlength: 1
   },
   price: {
-    type: int, //integer of pence
+    type: Number, //integer of pence
     required: true,
     min: 0
   }

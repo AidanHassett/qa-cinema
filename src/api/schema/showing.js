@@ -18,7 +18,7 @@ const showing = new Schema ({
     minlength: 1
   },
   ticketPrice: {
-    type: int, //integer of pence
+    type: Number, //integer of pence
     required: true,
     min: 0
   }
