@@ -3,7 +3,9 @@ import './Home.css';
 import Times from '../OpeningTimes/Times';
 import { Container } from 'react-bootstrap'
 import WelcomePage from './WelcomePage';
-import LatestScreening from '../Latest/LatestScreening';
+import LatestScreening from '../LatestScreening/LatestScreening';
+import NRFilms from '../Movies/NewReleases/NRFilms';
+import data from '../Movies/NewReleases/NewReleases.json';
 
 
 const Home = () => {
