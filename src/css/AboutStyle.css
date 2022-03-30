@@ -8,7 +8,7 @@ body {
   font-family: monospace;
   font-size: 20px;
   border-radius: 5px;
-  background-color:gold;
+  background-color:lightblue;
   padding: 20px;
 }
 
@@ -21,7 +21,7 @@ body {
   font-family: monospace;
   font-size: 20px;
   border-radius: 5px;
-  background-color:gold;
+  background-color:lightblue;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -74,7 +74,7 @@ text-align: center;
 letter-spacing: 0.1px;
 
 /* Light / White */
-color: gold;
+color: lightblue;
 
 
 
@@ -96,8 +96,8 @@ color: gold;
  
     text-align: center!important;
     align-items: center;
-    background: rgb(255,233,59)!;
-    background: linear-gradient(0deg, rgba(255,233,59,1) 0%, rgba(0,0,0,1) 65%)!important;
+    background: lightblue;
+    background: linear-gradient(0deg, lightblue, rgba(0,0,0,1) 65%)!important;
     width: 100;
 
 
@@ -108,7 +108,7 @@ color: gold;
     display:block;
     width:100px;
     height:20px;
-    background-color: gold;
+    background-color: lightblue;
 
 }
 
@@ -129,7 +129,7 @@ padding-bottom:15vmin;
     padding-top: 30vmin;
     text-align: center;
     padding-right: 30vmin;
-    color:gold;
+    color:lightblue;
 
 }
 
@@ -156,6 +156,6 @@ padding-bottom:15vmin;
 }
 
 .Button{
-  color: gold!important;
+  color: lightgray!important;
   padding-left: 10vmin;
 }
