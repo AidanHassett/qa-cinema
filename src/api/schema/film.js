@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 mongoose.connect("mongodb://localhost:27017/qa_cinema", {useNewUrlParser: true});
 
-const comment = new Schema ({
+const comment = new Schema ();
+comment.add ({
   poster: {
     type: Schema.Types.ObjectId,
     ref: "Customer"
@@ -55,8 +56,8 @@ const film = new Schema ({
   },
   classification: {
     type: String,
-    minlength: 1,
-    maxlength: 3
+    enum: ["U", "12A", "12", "15", "18", "R18", ""],  // "" (empty) represents unknown age rating
+    default: ""
   },
   realease: {
     type: Date,
@@ -67,7 +68,7 @@ const film = new Schema ({
     type: Number,
     required: true,
     min: 0
-  }
+  },
   cast: [role],
   comments: [comment]
 });
