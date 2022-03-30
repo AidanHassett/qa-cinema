@@ -1,4 +1,8 @@
 import "../../css/AboutStyle.css";
+import Joseph from "./TeamMembers/Joseph";
+import Tasnima from "./TeamMembers/Tasnima";
+import Aidan from "./TeamMembers/Aidan";
+import Varis from "./TeamMembers/Varis";
 
 const MeetTheTeam = () => {
     return (
