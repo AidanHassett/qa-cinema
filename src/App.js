@@ -1,4 +1,5 @@
 import logo from './res/logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
 import OpeningTimes from './components/OpeningTimes';
 import Listings from './components/Listings';
