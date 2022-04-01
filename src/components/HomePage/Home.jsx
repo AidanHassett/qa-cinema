@@ -1,4 +1,4 @@
-import NavBar from "../NavBar/NavBar";
+// import NavBar from "../NavBar/NavBar";
 import './Home.css';
 import Times from '../OpeningTimes/Times';
 import { Container } from 'react-bootstrap'
@@ -6,12 +6,15 @@ import WelcomePage from './WelcomePage';
 import LatestScreening from '../LatestScreening/LatestScreening';
 import NRFilms from '../Movies/NewReleases/NRFilms';
 import data from '../Movies/NewReleases/NewReleases.json';
-
+import Carousel from './Carousel';
 
 const Home = () => {
     return ( 
 
         <>
+
+        <Carousel></Carousel>
+
             <h2> Welcome to QA Cinema!</h2>
         <div className="container">
                 <div className="row-md" id="newreleasesheader">

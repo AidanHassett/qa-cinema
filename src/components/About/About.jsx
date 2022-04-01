@@ -5,6 +5,9 @@ import FindUs from "./FindUs";
 import MeetTheTeam from "./MeetTheTeam";
 import QACinemaInfo from "./QACinemaInfo";
 import logo from "../../Resources/QA-cinema.png"
+import Maps from "./Maps";
+import PlacesToGoPage from "./PlacesToGo/PlacesToGoPage";
+
 
 
 
@@ -33,7 +36,7 @@ const About = () => {
               </Col>
               <Col>
                 <Col>
-                  <Map></Map>
+                  <Maps></Maps>
                 </Col>
               </Col>
             </div>
