@@ -6,14 +6,18 @@ import WelcomePage from './WelcomePage';
 import LatestScreening from '../LatestScreening/LatestScreening';
 import NRFilms from '../Movies/NewReleases/NRFilms';
 import data from '../Movies/NewReleases/NewReleases.json';
-import Carousel from './Carousel';
+import CarouselPage from './Carousel';
+import image1 from '../../Resources/image1.jpg';
+import image2 from '../../Resources/image2.jpg';
+import image3 from '../../Resources/image3.jpg';
+
 
 const Home = () => {
     return ( 
 
         <>
 
-        <Carousel></Carousel>
+        <CarouselPage>image1={image1} image2={image2} image3={image3}</CarouselPage>
 
             <h2> Welcome to QA Cinema!</h2>
         <div className="container">

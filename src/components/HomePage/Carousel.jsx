@@ -1,12 +1,12 @@
-import {
-    Carousel,
-} from 'reactstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
-<Carousel>
+const CarouselPage = ({ image1, image2, image3}) => {
+
+    <Carousel>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
+      src="image1"
       alt="Book Tickets Now!"
     />
     <Carousel.Caption>
@@ -17,7 +17,7 @@ import {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
+      src="image2"
       alt="What's New?"
     />
 
@@ -29,7 +29,7 @@ import {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      src="image3"
       alt="Sign Up!"
     />
 
@@ -39,3 +39,7 @@ import {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+}
+
+export default CarouselPage
+
