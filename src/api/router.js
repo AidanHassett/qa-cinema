@@ -179,6 +179,30 @@ router.get("/getConcession/:id", (req, res, next) => {
   });
 });
 
+  // Tickets
+
+router.get("/getAllTickets", (req, res, next) => {
+Ticket.find({}, [], (err, tickets) => {
+  if (err) {
+    return next({status: 400, message: err.message});
+  } else {
+    return res.json(tickets);
+  }
+});
+});
+
+router.get("/getTicket/:id", (req, res, next) => {
+const id = req.params.id;
+
+Ticket.findById(id, {}, [], (err, ticket) => {
+  if (err) {
+    return next({status: 400, message: err.message});
+  } else {
+    return res.json(ticket);
+  }
+});
+});
+
 // UPDATE
 
 
