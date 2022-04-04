@@ -1,8 +1,15 @@
 import React from 'react'
+import { Toast } from 'react-bootstrap'
 
 const Info = () => {
     return (
         <>
+
+<div className="beauty">
+        <Toast.Header className="goldenHours">
+          <strong style={{ color: 'red' }}>Information</strong>
+        </Toast.Header>
+        <Toast.Body className="goldenHours">
 
             <h2> Movie Classifications </h2>
             <hr />
@@ -21,7 +28,8 @@ const Info = () => {
                 target="_blank"
             >Addition Info from the BBFC website
             </a>
-
+            </Toast.Body>
+</div>
 
         </>
     )
