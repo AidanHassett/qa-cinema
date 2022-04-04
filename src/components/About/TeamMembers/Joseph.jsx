@@ -9,7 +9,7 @@ const Joseph = () => {
         <div className="col-md-9">
             <h3>Joseph Price</h3>
             <p>
-                Hi there, my name is Joe! My favourite genre of movies has to be action! My favourite film in 2022 was definately the Batman. I also hate horrors!
+                Hi there, my name is Joe! My favourite genre of movies has to be action! My favourite film in 2022 was definitely the Batman. I also hate horrors!
             </p>
         </div>
     </div>
@@ -20,4 +20,3 @@ const Joseph = () => {
 
 
 export default Joseph;
-

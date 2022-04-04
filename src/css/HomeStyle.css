@@ -1,18 +1,18 @@
 body {
     font-family: 'Staatliches', cursive!important;
  background-color: black!important;
-    
+
     overflow-x: hidden;
 
 }
 
-p{
+p {
     font-family: monospace!important;
 }
 
 
 
-hr{
+hr {
 
     background-color: lightblue!important;
 
