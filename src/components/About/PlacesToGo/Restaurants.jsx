@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import Tgi from "../../../Resources/Tgi.jpg";
-import nandos from "../../../Resources/nandos.jpg";
-import pizzahut from "../../../Resources/pizzahut.jpg";
+import Tgi from "../../../res/Tgi.jpg";
+import nandos from "../../../res/nandos.jpg";
+import pizzahut from "../../../res/pizzahut.jpg";
 
 const Restaurants = () => {
 
@@ -33,7 +33,7 @@ const Restaurants = () => {
                                 </center>
                                 <br />
                                 <p>
-                                TGI Fridays is an American restaurant chain focusing on casual dining. The name is asserted to stand for "Thank God It's Friday", although as of 2010 some television commercials for the chain have also made use of the alternative phrase, "Thank Goodness It's Friday." 
+                                TGI Fridays is an American restaurant chain focusing on casual dining. The name is asserted to stand for "Thank God It's Friday", although as of 2010 some television commercials for the chain have also made use of the alternative phrase, "Thank Goodness It's Friday."
                                 </p>
                                 <p>Contact: 03331501300</p>
                             </div>

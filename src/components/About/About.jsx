@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import FindUs from "./FindUs";
 import MeetTheTeam from "./MeetTheTeam";
 import QACinemaInfo from "./QACinemaInfo";
-import logo from "../../Resources/QA-cinema.png"
+import logo from "../../res/QA-cinema.png"
 import Maps from "./Maps";
 import PlacesToGoPage from "./PlacesToGo/PlacesToGoPage";
 
@@ -18,7 +18,7 @@ const About = () => {
         <br className="br"></br>
         <br className="br"></br>
         <Container maxWidth="lg">
-  
+
           <Container>
             <div className="row">
               <Col>
@@ -29,7 +29,7 @@ const About = () => {
                 <QACinemaInfo></QACinemaInfo>
               </Col>
             </div>
-  
+
             <div className="row">
               <Col sm={6}>
                 <FindUs></FindUs>
@@ -40,19 +40,19 @@ const About = () => {
                 </Col>
               </Col>
             </div>
-  
+
             <PlacesToGoPage />
-  
+
           </Container>
-  
+
           <MeetTheTeam></MeetTheTeam>
         </Container>
-  
-  
+
+
       </>
     );
   };
-  
-  
-  
+
+
+
   export default About;
