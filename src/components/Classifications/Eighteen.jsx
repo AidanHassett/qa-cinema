@@ -42,7 +42,7 @@ const Eighteen = () => {
                             href="https://www.bbfc.co.uk/rating/18"
                             rel="noreferrer"
                             target="_blank"
-                        >Addition Info from the BBFC website
+                        >Additional Info from the BBFC website
                         </a>
                     </Toast.Body>
                 </div>

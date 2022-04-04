@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import beatone from "../../../res/beatone.jpg";
-import kongs from "../../../res/kongs.jpg";
-import peppermint from "../../../res/peppermint.jpg";
+import beatone from "../../../res/placesToGo/beatone.jpg";
+import kongs from "../../../res/placesToGo/kongs.jpg";
+import peppermint from "../../../res/placesToGo/peppermint.jpg";
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 
