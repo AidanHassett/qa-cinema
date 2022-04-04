@@ -19,7 +19,10 @@ comment.add ({
     type: Date,
     default: new Date()
   },
-  replies: [comment]
+  replies: {
+    type: [comment],
+    select: false
+  }
 });
 
 const role = new Schema ({
@@ -59,7 +62,7 @@ const film = new Schema ({
     enum: ["U", "12A", "12", "15", "18", "R18", ""],  // "" (empty) represents unknown age rating
     default: ""
   },
-  realease: {
+  release: {
     type: Date,
     required: true,
     min: new Date("1888-01-01")
@@ -70,7 +73,10 @@ const film = new Schema ({
     min: 0
   },
   cast: [role],
-  comments: [comment]
+  comments: {
+    type: [comment],
+    select: false
+  }
 });
 
 module.exports = mongoose.model("Film", film);

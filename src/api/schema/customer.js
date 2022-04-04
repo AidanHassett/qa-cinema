@@ -17,13 +17,14 @@ const customer = new Schema ({
   password: {
     type: String,
     required: true,
-    minlength: 256,
-    maxlength: 512
+    maxlength: 512,
+    select: false
   },
   salt: {
     type: String,
     required: true,
-    minlength: 1
+    minlength: 1,
+    select: false
   }
 });
 
