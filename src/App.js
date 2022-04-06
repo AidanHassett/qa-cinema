@@ -14,6 +14,7 @@ import ContactPage from './components/ContactUs/ContactPage';
 import LostPage from './components/LostPage';
 import Listings from './components/Movies/MovieList/Listings';
 import Footer from './components/Footer/Footer';
+import TicketBooking from './components/Tickets/TicketPage/TicketBooking' 
 
 
 
@@ -56,6 +57,11 @@ function App() {
         <Routes>
           <Route path="/search" element={<SearchPage />} />
         </Routes>
+
+        <Routes>
+          <Route path="/bookings" element={<TicketBooking />} />
+        </Routes>
+
 
         <Routes>
           <Route path="/lostpage" element={<LostPage />} />
