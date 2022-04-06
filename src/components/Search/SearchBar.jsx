@@ -1,5 +1,5 @@
 import { Form, FormControl } from 'react-bootstrap';
-import searchicon from '../../Resources/searchicon.jpg';
+import searchicon from '../../res/searchicon.jpg';
 
 const SearchBar = ({ updateQuery, stateQuery }) => {
     return (
