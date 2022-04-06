@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
 import OpeningTimes from './components/OpeningTimes';
 import Listings from './components/Listings';
+import DiscussionBoard from './components/Discussions/DiscussionBoard';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         </a>
       </header> */}
       {/* <OpeningTimes/> */}
-      <Listings/>
+      {/* <Listings/> */}
+      <DiscussionBoard/>
     </div>
   );
 }
