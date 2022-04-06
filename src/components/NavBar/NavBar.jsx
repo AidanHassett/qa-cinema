@@ -29,6 +29,9 @@ const NavBar = (props) => {
                         <NavItem >
                             <NavLink style={{ color: 'blue' }} href='/' >Home</NavLink>
                         </NavItem>
+                        <NavItem >
+                            <NavLink style={{ color: 'blue' }} href='/placestogo' >Places To Go</NavLink>
+                        </NavItem>
                         <NavItem>
                             <NavLink style={{ color: 'blue' }} href='/about' >About</NavLink>
                         </NavItem>

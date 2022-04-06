@@ -22,7 +22,7 @@ body {
 }
 
 .goldenHours{
-    background-color: white;
+    background-color: lightgray;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,8 +30,8 @@ body {
 .goldenB{
     
     text-align: center;
-    background-color: lightgray;
-    color: white;
+    background-color: none;
+    color: black;
 }
 
 .align{
