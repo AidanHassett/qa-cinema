@@ -1,0 +1,13 @@
+[{
+    "title" : "Standard Seating"  , 
+    "cost" : 7.99,
+    "desciption" : "Standard seating allows you access to the large array of seating inside our cinema whilst providing you with the full QACinema experience, all for just £7.99! "
+
+},
+
+{
+    "title" : "Premium Deluxe Seating",
+    "cost" : 15.50,
+    "description" : "The Premium Deluxe seating not only provides you with the full QACinema experience, A new fully immersive feeling to movie viewing in premium seats with a premium view!"
+
+}]
