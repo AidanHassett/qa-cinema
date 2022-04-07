@@ -1,4 +1,7 @@
 import { useState } from "react";
+import logo from '../../res/QA-cinema.png';
+import PostDiscussion from "./PostDiscussion";
+import ReadDiscussion from "./ReadDiscussion";
 
 const DiscussionBoard = () => {
 
