@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { CardLink, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { useState } from 'react';
+import data from '../../res/Movies.json';
 const EditPost = ({item, trigger}) => {
 
     const { name, movie, topic, discussion, rating } = item;
