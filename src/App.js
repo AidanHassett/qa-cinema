@@ -14,10 +14,9 @@ import ContactPage from './components/ContactUs/ContactPage';
 import LostPage from './components/LostPage';
 import Listings from './components/Movies/MovieList/Listings';
 import Footer from './components/Footer/Footer';
+import DiscussionBoard from './components/Discussions/DiscussionBoard';
+import ScreenPage from './components/Screens/MainScreen/ScreenPage';
 import TicketBooking from './components/Tickets/TicketPage/TicketBooking' 
-
-
-
 
 
 function App() {
@@ -65,6 +64,14 @@ function App() {
 
         <Routes>
           <Route path="/lostpage" element={<LostPage />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/screens" element={<ScreenPage/>} />
+        </Routes>
+
+        <Routes>
+          <Route path="/discussions" element={<DiscussionBoard/>} />
         </Routes>
 
       </Router>
