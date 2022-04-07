@@ -1,30 +1,69 @@
-import logo from './res/logo.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/HomeStyle.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar';
+
+import FilmClassification from './components/FilmClassification';
+
 import './css/App.css';
-import OpeningTimes from './components/OpeningTimes';
-import Listings from './components/Listings';
-import DiscussionBoard from './components/Discussions/DiscussionBoard';
+import Home from './components/HomePage/Home';
+import NR from './components/Movies/NewReleases/NR';
+import SearchPage from './components/Search/SearchPage';
+import PlacesToGoPage from './components/About/PlacesToGo/PlacesToGoPage';
+import AboutPage from './components/About/About';
+import ContactPage from './components/ContactUs/ContactPage';
+import LostPage from './components/LostPage';
+import Listings from './components/Movies/MovieList/Listings';
+import Footer from './components/Footer/Footer';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      {/* <OpeningTimes/> */}
-      {/* <Listings/> */}
-      <DiscussionBoard/>
+    <div className="page-container">
+      <Router>
+        <NavBar />
+
+        <Routes>
+          <Route path="/home" element={<Home />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/classifications" element={<FilmClassification />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/placestogo" element={<PlacesToGoPage />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/listings" element={<Listings />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/newreleases" element={<NR />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/search" element={<SearchPage />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/lostpage" element={<LostPage />} />
+        </Routes>
+
+      </Router>
+
+      <Footer />
     </div>
   );
 }

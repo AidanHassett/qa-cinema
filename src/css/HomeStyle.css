@@ -1,0 +1,19 @@
+body {
+    font-family: 'Staatliches', cursive!important;
+ background-color: l#2a6592!important;
+
+    overflow-x: hidden;
+
+}
+
+p {
+    font-family: monospace!important;
+}
+
+
+
+hr {
+
+    background-color: lightblue!important;
+
+}
