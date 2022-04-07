@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Card, CardBody, CardTitle } from 'reactstrap';
 import axios from 'axios';
-import { DISCUSSION_URL } from './CONSTS.json';
+import { DISCUSSION_URL } from './CONST.json';
 import data from '../../res/Movies.json';
 
 const PostDiscussion = ({trigger}) => {

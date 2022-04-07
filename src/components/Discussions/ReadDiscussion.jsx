@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 import { Spinner } from 'reactstrap';
 import EachPost from './EachPost';
+import { DISCUSSION_URL } from './CONST.json';
 
 const ReadDiscussion = ({comment, trigger}) => {
 

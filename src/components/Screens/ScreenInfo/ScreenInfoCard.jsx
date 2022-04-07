@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/Screen.css";
-const ScreenInfoCard = () => {
+import "../Screen.css";
+const ScreenInfoCard = ({title, cost, desc}) => {
     return ( 
         <center>
             <div className="container" style={{ backgroundColor: "black" }} type="hidden">
