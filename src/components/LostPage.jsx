@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Image, Button } from "react-bootstrap/";
 import "../css/AboutStyle.css";
-import logo from "../Resources/QA-cinema.png";
+import logo from "../res/QA-cinema.png";
 import { Link } from 'react-router-dom';
 
 

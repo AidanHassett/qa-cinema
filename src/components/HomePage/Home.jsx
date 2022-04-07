@@ -7,9 +7,9 @@ import LatestScreening from '../LatestScreening/LatestScreening';
 import NRFilms from '../Movies/NewReleases/NRFilms';
 import data from '../Movies/NewReleases/NewReleases.json';
 import CarouselPage from './Carousel';
-import image1 from '../../Resources/image1.jpg';
-import image2 from '../../Resources/image2.jpg';
-import image3 from '../../Resources/image3.jpg';
+import image1 from '../../res/image1.jpg';
+import image2 from '../../res/image2.jpg';
+import image3 from '../../res/image3.jpg';
 
 
 const Home = () => {

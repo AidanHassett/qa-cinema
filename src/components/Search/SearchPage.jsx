@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import data from '../../Resources/Movies.json';
+import data from '../../res/Movies.json';
 import SearchBar from './SearchBar';
 import List from './List';
 import './Search.css';

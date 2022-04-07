@@ -1,4 +1,4 @@
-import data from '../../../Resources/Movies.json';
+import data from '../../../res/Movies.json';
 import ListingFilms from './ListingFilms';
 import '../Movie.css';
 

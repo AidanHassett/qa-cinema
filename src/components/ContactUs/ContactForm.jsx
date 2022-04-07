@@ -10,7 +10,7 @@ const ContactForm = () => {
     <>
 
       <h1 className="beauty"> Contact Us </h1>
-      <hr></hr>
+      
       <div className="formdiv">
         <form>
           <br />

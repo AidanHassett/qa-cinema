@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import Tgi from "../../../res/Tgi.jpg";
-import nandos from "../../../res/nandos.jpg";
-import pizzahut from "../../../res/pizzahut.jpg";
+import Tgi from "../../../res/placesToGo/Tgi.jpg";
+import nandos from "../../../res/placesToGo/nandos.jpg";
+import pizzahut from "../../../res/placesToGo/pizzahut.jpg";
 
 const Restaurants = () => {
 

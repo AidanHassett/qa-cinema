@@ -9,7 +9,7 @@ const PG = () => {
 
                 <div className="beauty">
                     <Toast.Header className="goldenHours">
-                        <strong style={{ color: 'red' }}>U Film Ratings</strong>
+                        <strong style={{ color: 'red' }}>PG Film Ratings</strong>
                     </Toast.Header>
                     <Toast.Body className="goldenHours">
                         <Image style={{ backgroundColor: 'lightgray', height: '30%', width: '30%' }} src={pgimage} rounded />
@@ -30,7 +30,7 @@ const PG = () => {
                             href="https://www.bbfc.co.uk/rating/pg"
                             rel="noreferrer"
                             target="_blank"
-                        >Addition Info from the BBFC website
+                        >Additional Info from the BBFC website
                         </a>
                     </Toast.Body>
                 </div>

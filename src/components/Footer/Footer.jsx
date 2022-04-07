@@ -10,7 +10,7 @@ const Footer = () => {
 
       <br></br>
       <br></br>
-      <Card style={{ borderColor: 'black' }}>
+      <Card style={{ borderColor: '#8ec3eb' }}>
         <Card.Body className="footer">
           <Card.Title style={{ color: 'blue' }} >QA Cinema</Card.Title>
           <Card.Text style={{ color: 'blue' }}> &copy;Welcome to the family!    </Card.Text>
@@ -18,13 +18,13 @@ const Footer = () => {
           </Card.Text>
           <Nav defaultActiveKey="/" as="ul" style={{ marginLeft: "42%" }}>
             <Nav.Item as="li" >
-              <Nav.Link style={{ color: 'white', marginLeft: '20px' }} href="/">Home</Nav.Link>
+              <Nav.Link style={{ color: 'blue', marginLeft: '-1020px' }} href="/">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Nav.Link style={{ color: 'white' }} eventKey="link-1" href="/about">About</Nav.Link>
+              <Nav.Link style={{ color: 'blue', marginLeft: '-1010px' }} eventKey="link-1" href="/about">About</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Nav.Link eventKey="link-2" style={{ color: 'white' }} href="/contact" >Contact Us</Nav.Link>
+              <Nav.Link eventKey="link-2" style={{ color: 'blue', marginLeft: '-960px' }} href="/contact" >Contact Us</Nav.Link>
             </Nav.Item>
           </Nav>
           <row>
