@@ -24,3 +24,4 @@ yarn-error.log*
 
 src/api/dummyData
 src/res/posters/*
+package-lock.json
