@@ -1,0 +1,6 @@
+
+   
+{
+    "BOOKING_URL": "http://localhost:4494/bookings",
+    "PAYMENT_URL": "http://localhost:4494/payment"
+}

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { Alert, ModalFooter } from 'reactstrap';
-
+import { PAYMENT_URL } from "../URL/CONST.json"
 
 const CardPayment = ({ sethidden }) => {
 

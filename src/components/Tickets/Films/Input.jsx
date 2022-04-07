@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Alert, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
-import "../css/TicketPayment.css"
+// import "../css/TicketPayment.css"
 import axios from "axios";
+import { BOOKING_URL } from "../URLs/CONST.json"
 
 
 
