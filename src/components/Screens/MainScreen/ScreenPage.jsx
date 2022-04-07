@@ -2,6 +2,7 @@ import { useState } from "react";
 import ReadMoreText from "../ScreenInfo/ReadMoreText";
 import ScreensReadMore from "../ScreenInfo/ScreensReadMore";
 import "../css/Screen.css";
+import CarouselCamp from"../MainScreen/CarouselCamp";
 import pic1 from "../res/screens/ScreenPics/cinema-seating-plan.png";
 import pic3 from "../res/screens/ScreenPics/deluxeseating1.jpg";
 import pic4 from "../res/screens/ScreenPics/deluxeseating2.jpg";
