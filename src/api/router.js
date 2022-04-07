@@ -59,7 +59,7 @@ router.get("/getComments/:filmId", (req, res, next) => {
         comments = comments.find((element) => {
           return element._id.equals(replyTrace[i])
         });
-        if (comments == undefined) {
+        if (comments === undefined) {
           return next({status: 404, message: "Invalid comment reply trace"});
         } else {
           comments = comments.replies;
