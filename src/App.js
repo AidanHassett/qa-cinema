@@ -16,9 +16,7 @@ import Listings from './components/Movies/MovieList/Listings';
 import Footer from './components/Footer/Footer';
 import DiscussionBoard from './components/Discussions/DiscussionBoard';
 import ScreenPage from './components/Screens/MainScreen/ScreenPage';
-
-
-
+import TicketBooking from './components/Tickets/TicketPage/TicketBooking' 
 
 
 function App() {
@@ -58,6 +56,11 @@ function App() {
         <Routes>
           <Route path="/search" element={<SearchPage />} />
         </Routes>
+
+        <Routes>
+          <Route path="/bookings" element={<TicketBooking />} />
+        </Routes>
+
 
         <Routes>
           <Route path="/lostpage" element={<LostPage />} />
