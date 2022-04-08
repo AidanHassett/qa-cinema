@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import films from "../../../res/Movies.json"
 import TicketSearch from '../TicketPage/TicketSearch'
-import ToggleInput from './ToggleInput'
+import ToggleInput from './Input'
 
 const ViewAll = ({ basketinfo }) => {
 

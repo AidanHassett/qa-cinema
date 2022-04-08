@@ -1,6 +1,7 @@
 import axios from "axios";
 import { CardLink, Modal, ModalBody, ModalFooter } from "reactstrap";
 import { useState } from 'react';
+import { DISCUSSION_URL } from './CONSTS.json';
 
 const DeletePost = ({item, trigger}) => {
 
@@ -17,7 +18,7 @@ const DeletePost = ({item, trigger}) => {
             })
     }
 
-    return ( 
+    return (
         <>
             <CardLink className="btn btn-outline-danger" onClick={toggle}>X</CardLink>
             <Modal isOpen={modal} id="delete-modal">
@@ -32,5 +33,5 @@ const DeletePost = ({item, trigger}) => {
         </>
      );
 }
- 
+
 export default DeletePost;
