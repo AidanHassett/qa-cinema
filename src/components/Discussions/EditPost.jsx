@@ -2,10 +2,10 @@ import axios from 'axios';
 import { CardLink, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { useState } from 'react';
 import data from '../../res/Movies.json';
-import { DISCUSSION_URL } from './CONSTS.json';
+
+import { DISCUSSION_URL } from './CONST.json';
 
 const EditPost = ({item, trigger}) => {
-    
 
     const { name, movie, topic, discussion, rating } = item;
     const [updateMovie, setUMovie] = useState(movie);
@@ -32,7 +32,8 @@ const EditPost = ({item, trigger}) => {
             })
         }
 
-    return ( 
+    return (
+
         <>
         <CardLink className="btn btn-outline-dark" onClick={toggle}>Edit</CardLink>
         <Modal isOpen={modal}>
