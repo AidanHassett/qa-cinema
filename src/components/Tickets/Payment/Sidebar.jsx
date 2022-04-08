@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Card, CardBody, CardTitle, CardFooter } from "reactstrap"
-// import "../css/TicketPayment.css"
+import "../TicketPayment.css"
 import PaymentModal from './PaymentModal';
 
 const Sidebar = ({ basketinfo, ticketalert }) => {

@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Alert, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
-// import "../css/TicketPayment.css"
+import "../TicketPayment.css"
 import axios from "axios";
-import { BOOKING_URL } from "../URLs/CONST.json"
-
+import { BOOKING_URL } from "../TicketRes/CONST.json"
 
 
 const Input = ({ filmname, basketinfo }) => {
@@ -64,7 +63,7 @@ const Input = ({ filmname, basketinfo }) => {
         } else {
 
             // If the tickets are both 0
-            if (adultTic + childTic === 0) {
+            if (adultTic + childTic == 0) {
                 setnoTicket(true);
                 toggleTicketAlert();
             } else {

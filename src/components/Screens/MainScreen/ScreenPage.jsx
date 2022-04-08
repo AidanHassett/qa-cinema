@@ -1,14 +1,14 @@
 import { useState } from "react";
 import ReadMoreText from "../ScreenInfo/ReadMoreText";
 import ScreensReadMore from "../ScreenInfo/ScreensReadMore";
-import "../css/Screen.css";
+import "../Screen.css"
 import CarouselCamp from"../MainScreen/CarouselCamp";
-import pic1 from "../res/screens/ScreenPics/cinema-seating-plan.png";
-import pic3 from "../res/screens/ScreenPics/deluxeseating1.jpg";
-import pic4 from "../res/screens/ScreenPics/deluxeseating2.jpg";
-import pic5 from "../res/screens/ScreenPics/LuxurySeating.jpg";
-import pic2 from "../res/screens/ScreenPics/StandardSeating.jpg"
-import pic6 from "../res/screens/ScreenPics/cinema-seating-plan.png";
+import pic1 from "../ScreenPics/cinema-seating-plan.png";
+import pic3 from "../ScreenPics/deluxeseating1.jpg";
+import pic4 from "../ScreenPics/deluxeseating2.jpg";
+import pic5 from "../ScreenPics/LuxurySeating.jpg";
+import pic2 from "../ScreenPics/StandardSeating.jpg"
+import pic6 from "../ScreenPics/cinema-seating-plan.png";
 
 const ScreenPage = () => {
     const [toggleOn, setToggleOn] = useState("")
@@ -31,10 +31,10 @@ const ScreenPage = () => {
             <br />
             <div className="row" style={{ height: "400px" }} >
                 <div className="slider-container ">
-                    <CarouselComp image1={pic2} image2={pic3} image3={pic1} />
+                    <CarouselCamp image1={pic2} image2={pic3} image3={pic1} />
                 </div>
                 <div className="slider-container">
-                    <CarouselComp image1={pic4} image2={pic5} image3={pic6} style={{ height: "400px" }} />
+                    <CarouselCamp image1={pic4} image2={pic5} image3={pic6} style={{ height: "400px" }} />
                 </div>
             </div>
             <br />

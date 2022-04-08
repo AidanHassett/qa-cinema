@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ViewAll from '../Films/ViewAll'
 import Sidebar from '../Payment/Sidebar'
-// import "./css/TicketPayment.css"
+import "../TicketPayment.css"
 import { Alert } from 'reactstrap'
 
 

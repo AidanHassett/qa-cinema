@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import films from "../../../res/Movies.json"
 import TicketSearch from '../TicketPage/TicketSearch'
-import ToggleInput from './Input'
+import Input from './Input'
 
 const ViewAll = ({ basketinfo }) => {
 
@@ -32,7 +32,7 @@ const ViewAll = ({ basketinfo }) => {
                         <hr />
                         <div className="row" style={{ marginLeft: "20px" }}>
                             <h4 style={{ color: 'gold' }} >{film.title}</h4>
-                            <ToggleInput basketinfo={basketinfo} filmname={film.title} />
+                            <Input basketinfo={basketinfo} filmname={film.title} />
                         </div>
                         <h6 style={{ color: 'gold', marginTop: "3px", marginLeft: "20px" }}>Rated: {film.rating}</h6>
                     </div>
