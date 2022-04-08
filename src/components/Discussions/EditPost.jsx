@@ -6,6 +6,7 @@ import { DISCUSSION_URL } from './CONST.json';
 
 const EditPost = ({item, trigger}) => {
 
+
     const { name, movie, topic, discussion, rating } = item;
     const [updateMovie, setUMovie] = useState(movie);
     const [updateTopic, setUTopic] = useState(topic);
@@ -31,7 +32,7 @@ const EditPost = ({item, trigger}) => {
             })
         }
 
-    return ( 
+    return (
         <>
         <CardLink className="btn btn-outline-dark" onClick={toggle}>Edit</CardLink>
         <Modal isOpen={modal}>
@@ -89,5 +90,5 @@ const EditPost = ({item, trigger}) => {
     </>
      );
 }
- 
+
 export default EditPost;

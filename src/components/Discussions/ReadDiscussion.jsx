@@ -39,5 +39,5 @@ const ReadDiscussion = ({comment, trigger}) => {
         )
     }
 }
- 
+
 export default ReadDiscussion;
