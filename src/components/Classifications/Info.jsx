@@ -19,14 +19,15 @@ const Info = () => {
                     </p>
 
                     <p>
-                        Classifications currently in use are Uc, U, PG, 12, 12A, 15, 18 and R18, but quite a few more have been featured on film posters throughout the last century.
+                        Classifications currently in use are U, PG, 12, 12A, 15, 18 and R18, but quite a few more have been featured on film posters throughout the last century.
                     </p>
 
                     <a style={{ color: 'red' }}
                         href="https://www.bbfc.co.uk/about-classification"
                         rel="noreferrer"
                         target="_blank"
-                    >Addition Info from the BBFC website
+                    >
+                      Additional info from the BBFC website
                     </a>
                 </Toast.Body>
             </div>
