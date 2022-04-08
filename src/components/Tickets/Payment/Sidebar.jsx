@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Card, CardBody, CardTitle, CardFooter } from "reactstrap"
+
 import "../TicketPayment.css"
 import PaymentModal from './PaymentModal';
 

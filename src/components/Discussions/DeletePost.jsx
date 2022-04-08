@@ -3,7 +3,6 @@ import { CardLink, Modal, ModalBody, ModalFooter } from "reactstrap";
 import { useState } from 'react';
 import { DISCUSSION_URL } from './CONST.json';
 
-
 const DeletePost = ({item, trigger}) => {
 
     const [modal, setModal] = useState(false);
@@ -20,6 +19,7 @@ const DeletePost = ({item, trigger}) => {
     }
 
     return (
+
         <>
             <CardLink className="btn btn-outline-danger" onClick={toggle}>X</CardLink>
             <Modal isOpen={modal} id="delete-modal">
