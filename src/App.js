@@ -1,4 +1,4 @@
-import './res/HomeStyle.css'
+import './css/HomeStyle.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 
@@ -8,13 +8,15 @@ import './css/App.css';
 import Home from './components/HomePage/Home';
 import NR from './components/Movies/NewReleases/NR';
 import SearchPage from './components/Search/SearchPage';
+import PlacesToGoPage from './components/About/PlacesToGo/PlacesToGoPage';
 import AboutPage from './components/About/About';
 import ContactPage from './components/ContactUs/ContactPage';
 import LostPage from './components/LostPage';
 import Listings from './components/Movies/MovieList/Listings';
 import Footer from './components/Footer/Footer';
-
-
+import DiscussionBoard from './components/Discussions/DiscussionBoard';
+import ScreenPage from './components/Screens/MainScreen/ScreenPage';
+import TicketBooking from './components/Tickets/TicketPage/TicketBooking' 
 
 
 function App() {
@@ -29,6 +31,10 @@ function App() {
 
         <Routes>
           <Route path="/classifications" element={<FilmClassification />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/placestogo" element={<PlacesToGoPage />} />
         </Routes>
 
         <Routes>
@@ -52,7 +58,20 @@ function App() {
         </Routes>
 
         <Routes>
+          <Route path="/bookings" element={<TicketBooking />} />
+        </Routes>
+
+
+        <Routes>
           <Route path="/lostpage" element={<LostPage />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/screens" element={<ScreenPage/>} />
+        </Routes>
+
+        <Routes>
+          <Route path="/discussions" element={<DiscussionBoard/>} />
         </Routes>
 
       </Router>

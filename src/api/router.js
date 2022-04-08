@@ -9,7 +9,49 @@ const Film = require("./schema/film.js");
 
 // CREATE
 
+router.post("/addComment/:id", (req, res, next) => {
+  const filmId = req.params.id;
+  const replyTrace = req.body.replyTrace;
+  const inComment = req.body.comment;
 
+  Film.findById(filmId, {}, [], (err, film) => {
+    if (err) {
+      return next({status: 400, message: err.message});
+    } else {
+      let comments = film.comments;
+      let strTrace = "comments.";
+      for (var i = 0; i < replyTrace.length; i++) {
+        index = comments.findIndex((element) => {
+          return element._id.equals(replyTrace[i])
+        });
+
+        if (index === -1) {
+          return next({status: 404, message: "Invalid comment reply trace"});
+        } else {
+          strTrace += index + ".replies.";
+          comments = comments[index].replies;
+        }
+      }
+
+      strTrace += comments.push(inComment);
+
+      film.populate(strTrace);
+
+      return (async () => {
+        const newFilm = await film.save();
+      })().then((newFilm) => {
+        for (var i = 0; i < replyTrace.length; i++) {
+          let comments = newFilm.comments;
+          comments = comments.find((element) => {
+            return element._id.equals(replyTrace[i])
+          }).replies;
+        }
+
+        return res.json(comments);
+      });
+    }
+  }).select("comments");
+})
 
 // READ
 
@@ -59,7 +101,7 @@ router.get("/getComments/:filmId", (req, res, next) => {
         comments = comments.find((element) => {
           return element._id.equals(replyTrace[i])
         });
-        if (comments == undefined) {
+        if (comments === undefined) {
           return next({status: 404, message: "Invalid comment reply trace"});
         } else {
           comments = comments.replies;

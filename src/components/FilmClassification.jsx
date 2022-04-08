@@ -18,7 +18,7 @@ const FilmClassification = () => {
   return (
     <>
       <div className="container">
-        <h1 style={{ color: 'gold', textAlign: 'center', paddingTop: '5vmin' }}> Film Classification</h1>
+        <h1 style={{ color: 'red', textAlign: 'center', paddingTop: '5vmin' }}> Film Classification</h1>
         <hr />
         <br />
         <br />
